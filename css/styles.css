@@ -142,13 +142,13 @@ button,
   display: inline-block;
   font-family: inherit;
   background-color: var(--third-color);
-  color: #2b2b2b;
+  color: #050505;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-property: opacity;
-  transition-duration: 1s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in;
 }
 
