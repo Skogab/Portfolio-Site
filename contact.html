@@ -1,118 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Matthias</title>
-    <link rel="shortcut icon" href="img/favicon-32x32.png" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  </head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Contact Matthias</title>
+		<link rel="shortcut icon" href="img/favicon-32x32.png" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	</head>
 
-  <body>
-    <!-- Header including the logo and the main navigation -->
-    <header class="page-header">
-      <!-- Add Logo here -->
-      <img src="img/logo-mierau.png" alt="logo" class="page-header__item" />
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About me</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Work</a
-            >
-          </li>
+	<body>
+		<!-- Header including the logo and the main navigation -->
+		<header class="page-header">
+			<!-- Add Logo here -->
+			<img src="img/logo-mierau.png" alt="logo" class="page-header__item" />
+			<nav class="main-navigation page-header__item">
+				<ul role="menubar" class="navigation-list">
+					<li role="presentation">
+						<a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+					</li>
+					<li role="presentation">
+						<a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+					</li>
+					<li role="presentation">
+						<a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+					</li>
 
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+					<li role="presentation">
+						<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    <main>
-      <div class="contact">
-        <p></p>
-        <h1>Contact</h1>
+		<main style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+			<div class="contact">
+				<h1>Contact</h1>
+				<p class="contact-info">
+					Matthias Mierau<br />
+					Dortmund<br />
+					Skype: <a href="skype:live.mierau.matthias">live:mierau.matthias</a><br />
+					Mail:
+					<a href="mailto:mierau.matthias@gmail.com">mierau.matthias@gmail.com</a>
+				</p>
+				<a href="mailto:mierau.matthias@gmail.com" class="btn-visit">Contact me</a>
+			</div>
 
-        Matthias Mierau<br />
-        <br />
-        Dortmund<br />
-        <br />
+			<div class="contact-form">
+				<h3>Get in touch with me</h3>
+				<form action="#" method="post" id="contact-form">
+					<label class="standard-label" for="contact-email">Email: </label><br />
+					<input type="email" id="contact-email" class="contact-field" required /><br />
+					<label class="standard-label" for="tel">Telephone: </label><br />
+					<input type="tel" id="tel" class="contact-field" /><br />
+					<label class="standard-label" for="message">Message: </label><br />
+					<textarea id="message" required maxlength="240" class="contact-field"></textarea><br />
+					<input type="submit" value="Send message" class="btn-visit" /><br />
+				</form>
+			</div>
 
-        Skype: <a href="skype:live.mierau.matthias">live:mierau.matthias</a
-        ><br />
-        Mail:
-        <a href="mailto:mierau.matthias@gmail.com">mierau.matthias@gmail.com</a
-        ><br />
-        <p></p>
-        <a href="mailto:mierau.matthias@gmail.com">Contact me</a>
-      </div>
-      <p></p>
-
-      <div class="contact-form">
-        <h3>Get in touch with me</h3>
-        <form action="#" method="post" id="contact-form">
-          <label class="standard-label" for="contact-email">Email: </label
-          ><br />
-          <input
-            type="email"
-            id="contact-email"
-            class="contact-field"
-            required
-          /><br />
-          <p></p>
-
-          <label class="standard-label" for="tel">Telephone: </label><br />
-          <input type="tel" id="tel" class="contact-field" /><br />
-          <p></p>
-
-          <label class="standard-label" for="message">Message: </label><br />
-          <textarea
-            id="message"
-            required
-            maxlength="240"
-            class="contact-field"
-          ></textarea
-          ><br />
-          <input type="submit" value="Send message" /><br />
-          <p></p>
-        </form>
-      </div>
-
-      <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-          <img src="img/github.svg" alt="Github" width="40" height="40" />
-          <img src="img/twitter.svg" alt="Twitter" width="40" height="40" />
-          <img src="img/linkedin.svg" alt="LinkedIn" width="40" height="40" />
-        </div>
-      </footer>
-    </main>
-  </body>
+			<footer class="page-footer">
+				<p>Find me on</p>
+				<div class="social-media">
+					<a href="https://github.com/Skogab" target="_blank">
+						<img src="img/github.svg" alt="Github" width="40" height="40" />
+					</a>
+					<a href="https://www.linkedin.com/in/matthias-mierau-7710b5161/" target="_blank">
+						<img src="img/linkedin.svg" alt="LinkedIn" width="40" height="40" />
+					</a>
+				</div>
+			</footer>
+		</main>
+	</body>
 </html>

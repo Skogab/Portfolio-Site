@@ -1,125 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Matthias Layout</title>
-    <link rel="shortcut icon" href="img/favicon-32x32.png" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  </head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Matthias Layout</title>
+		<link rel="shortcut icon" href="img/favicon-32x32.png" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+	</head>
 
-  <body>
-    <!-- Header including the logo and the main navigation -->
-    <header class="page-header">
-      <img
-        src="img/logo-mierau.png"
-        height="200"
-        width="200"
-        alt="logo"
-        class="page-header__item"
-      />
+	<body>
+		<!-- Navbar -->
+		<header class="page-header">
+			<img src="img/logo-mierau.png" height="200" width="200" alt="logo" class="page-header__item" />
 
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About me</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Work</a
-            >
-          </li>
+			<nav class="main-navigation page-header__item">
+				<ul role="menubar" class="navigation-list">
+					<li role="presentation">
+						<a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+					</li>
+					<li role="presentation">
+						<a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+					</li>
+					<li role="presentation">
+						<a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+					</li>
+					<li role="presentation">
+						<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+		<!-- Main content -->
+		<main class="container mt-4 custom-container">
+			<h1 class="text-center">My projects</h1>
 
-    <!-- Main content -->
-    <section class="work">
-      <h1>My work</h1>
-      <div class="grid">
-        <div class="grid__item">
-          <!-- Grid items will live here -->
-          <h2>Mobile web app</h2>
-          <p>
-            Projet Number 1 This is just a small example for testing if
-            eyertyhing fits.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card mb-4 project-border">
+						<h2 class="card-title">Chat App</h2>
+						<p class="card-text">
+							This project is a chat application built with React Native and Firebase. It includes features such as user
+							authentication, real-time messaging, image sharing, and location sharing. The application allows users to
+							sign in anonymously, choose a username and background color, and engage in real-time chat conversations.
+						</p>
+						<img src="img/chat2.jpg" alt="Mobile Web App Screenshot" class="custom-card-img" />
+						<a href="https://github.com/Skogab/chat-app" target="_blank" class="btn-git">Github</a>
+					</div>
+				</div>
+				<!-- Repeat the structure for other projects -->
+				<div class="col-md-6">
+					<div class="card mb-4 project-border">
+						<h2 class="card-title">My Flix Client</h2>
+						<p class="card-text">
+							This is an application built using the MERN stack that allows users to sign-up, login, browse and interact
+							with a collection of movies. Users can search for movies, view a movies details (description, genre,
+							director, year), add movies to their favorites, and discover similar movies.
+						</p>
+						<img src="img/flix-client.JPG" alt="Screenshot" class="custom-card-img" />
+						<a href="https://github.com/Skogab/myFlix-Client" target="_blank" class="btn-git">Github</a>
+						<a href="https://skogab-myflix.netlify.app/" target="_blank" class="btn-visit">Visit</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card mb-4 project-border">
+						<h2 class="card-title">Angular</h2>
+						<p class="card-text">
+							Using MongoDB, Express.js and Node.js on the backend and Angular for the frontend, this app allows users
+							to view a selection of movies, view a movies details (description, genre, director), and add movies to
+							their list of favorites.
+						</p>
+						<img src="img/angular1.JPG" alt="Screenshot" class="custom-card-img" />
+						<a href="https://github.com/Skogab/myFlix-Angular-client" target="_blank" class="btn-git">Github</a>
+						<a href="https://skogab-myflix.netlify.app/" target="_blank" class="btn-visit">Visit</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card mb-4 project-border">
+						<h2 class="card-title">Pokedex</h2>
+						<p class="card-text">
+							A web application using HTML, CSS and JavaScript that loads data from an external API and enables the
+							viewing of data points in detail by displaying a list of pokemon as buttons, which when clicked will
+							display a picture of the pokemon and information.
+						</p>
+						<img src="img/pokedex1.JPG" alt="Screenshot" class="custom-card-img" />
+						<a href="https://github.com/Skogab/simple-js-app" target="_blank" class="btn-git">Github</a>
+						<a href="https://skogab.github.io/simple-js-app/#" target="_blank" class="btn-visit">Visit</a>
+					</div>
+				</div>
 
-        <div class="grid__item">
-          <h2>Mobile web app</h2>
-          <p>
-            Projet Number 2 This is just a small example for testing if
-            eyertyhing fits.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
+				<div class="col-md-6">
+					<div class="card mb-4 project-border">
+						<h2 class="card-title">Meet App</h2>
+						<p class="card-text">
+							A React application that loads data from the Google Calendar API and uses OAuth authorization, in
+							collaboration with AWS Lambda functions. Users can then view responsive charts, which display the numbers
+							of events in a range of cities, can choose a specific city, a specific number of events, and also view
+							details of a chosen event.
+						</p>
+						<img src="img/meet1.JPG" alt="Screenshot" class="custom-card-img" />
+						<a href="https://github.com/Skogab/meet" target="_blank" class="btn-git">Github</a>
+						<a href="https://skogab.github.io/meet/" target="_blank" class="btn-visit">Visit</a>
+					</div>
+				</div>
+			</div>
+		</main>
 
-        <div class="grid__item">
-          <h2>Mobile web app</h2>
-          <p>
-            Projet Number 3 This is just a small example for testing if
-            eyertyhing fits.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
+		<footer class="page-footer">
+			<p>Find me on</p>
+			<div class="social-media">
+				<a href="https://github.com/Skogab" target="_blank">
+					<img src="img/github.svg" alt="Github" width="40" height="40" />
+				</a>
+				<a href="https://www.linkedin.com/in/matthias-mierau-7710b5161/" target="_blank">
+					<img src="img/linkedin.svg" alt="LinkedIn" width="40" height="40" />
+				</a>
+			</div>
+		</footer>
 
-        <div class="grid__item">
-          <h2>Mobile web app</h2>
-          <p>
-            Projet Number 4 This is just a small example for testing if
-            eyertyhing fits.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
 
-        <div class="grid__item">
-          <h2>Mobile web app</h2>
-          <p>
-            Projet Number 5 This is just a small example for testing if
-            eyertyhing fits.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <img src="img/github.svg" alt="Github" width="40" height="40" />
-        <img src="img/twitter.svg" alt="Twitter" width="40" height="40" />
-        <img src="img/linkedin.svg" alt="LinkedIn" width="40" height="40" />
-      </div>
-    </footer>
-  </body>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
 </html>
